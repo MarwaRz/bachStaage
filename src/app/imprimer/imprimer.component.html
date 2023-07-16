@@ -1,0 +1,26 @@
+
+  
+
+<div class="tabIns">
+<table>
+  <tr>
+    <th>Numero</th>
+    <th>Nom et Prénom </th>
+    <th>CIN</th>
+    <th>Service/Direction</th>
+    <th>Entreprise</th>
+  
+
+
+  </tr>
+  <tr *ngFor="let orderDetail of myOrderDetails">
+    <td>{{ orderDetail.orderId }}</td>
+    <td>{{ orderDetail.orderFullName }}</td>
+    <td>{{ orderDetail.orderFullOrder }}</td>
+    <td>{{ orderDetail.orderContactNumber }}</td>
+    <td>{{ orderDetail.orderAlternateContactNumber }}</td>
+  
+
+  </tr>
+
+</table></div>

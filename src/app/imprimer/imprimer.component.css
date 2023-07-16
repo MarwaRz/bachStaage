@@ -1,0 +1,26 @@
+
+  table{
+    width : 90%;    border-collapse: collapse;
+    text-align: center;
+  }
+  
+  th, td,tr{
+    border: 1px solid black;
+    padding: 8px;
+    padding-left: 60px;
+    width: 200px;
+   text-align: center;
+   text-align: center;
+   vertical-align: middle;
+
+  }
+  .cni{
+    color: #122ca0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+
+ }
+.tabIns{
+  margin-top: 90px;
+}
+

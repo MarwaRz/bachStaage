@@ -1,0 +1,77 @@
+.hh{
+    color:rgb(255, 255, 255)
+    ;
+    
+}
+input[type=text] {
+    border:none;
+}
+input[type=time] {
+    border:none;
+}
+input[type=date] {
+    border:none;
+}
+.S{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 650px;
+    margin-top: -60px;
+}
+table  {
+    width : 100%;
+}
+.cni{
+    color: #122ca0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+ }
+.one{
+    width : 30%;
+   
+}
+select{
+  
+    border-color: #fff transparent transparent transparent;
+}
+
+.table {
+    border-color: #fff transparent transparent transparent;
+    width : 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th,
+  .table td {
+    border-color: #fff transparent transparent transparent;
+
+    padding: 8px;
+  }
+
+  .table-bordered1 {
+    border: 1px solid black;
+    width: 50%;
+    border-collapse: collapse;
+  }
+  
+  .table-bordered1 th,
+  .table-bordered1 td {
+    border: 1px solid black;
+    padding: 8px;
+  }
+
+  .custom-select {
+    width:100%; /* Définissez la largeur souhaitée */
+  }
+
+
+  .tabIns {
+    border: 1px solid rgb(84, 84, 84);
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .tabIns th,
+  .tabIns td {
+    border: 1px solid black;
+    padding: 8px;
+  }

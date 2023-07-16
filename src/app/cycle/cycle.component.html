@@ -1,0 +1,219 @@
+
+<table >
+    <thead>
+        <tr>
+            <th colspan="5">Entreprise : Centre national de l'informatique (CNI) </th>
+        </tr>
+    </thead>
+    <br>
+    <tbody>
+        <tr>
+            <td>
+                <label >N Action</label>
+                
+                <input type="text" id="name" name="name" required
+                      size="10"></td>
+            <td> <label class="container">Crédit d'impot
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+              </label></td>    <td><div class="hh">testtest</div></td>
+            <td>  <div class="i"><label class="container">Droit de tirage(individuel)
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+              </label></div></td>    <td><div class="hh">testtest</div></td>
+              <td>  <div class="i"><label class="container">Droit de tirage(collectif)
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+              </label></div></td>    <td><div class="hh">testtest</div></td>
+              <td><label for="name">Num salle</label>
+
+                <input type="text" id="name" name="name" required
+                      size="9"></td>
+
+        </tr>
+    </tbody>
+</table>
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+<table class="table" >
+    <thead>
+        <tr>
+            <th colspan="2"> <br></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+              <td>
+                <label for="name">Théme de Formation</label>
+
+                <input type="text" id="name" name="name" required
+                      size="40"></td>
+
+                      <td><div class="hh">dtestthuhu</div></td>
+              <td><label for="name">Mode de Formation</label>
+
+                <input type="text" id="name" name="name" required
+                      size="40"></td>
+
+        </tr>
+        <br>
+        <tr>
+            <td>
+              <label for="name">Lieu de déroulement</label>
+
+              <input type="text" id="name" name="name" required
+                    size="40"></td>
+<td><div class="hh">ddhdtesttihu</div></td>
+         
+            <td><label for="name">Gouvernorat</label>
+
+              <input type="text" id="name" name="name" required
+                    size="40"></td>
+
+      </tr>
+       
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<table  class="table">
+    <thead>
+        <tr>
+            <th colspan="5"> </th>
+        </tr>
+    </thead>
+    <br>
+    <tbody>
+        <tr>
+            <td>
+
+
+
+
+<div class="ii"><label for="start">Periode du :</label>
+
+<input   #box (keyup)="0" type="date" id="start" name="trip-start"
+      >Au <input  #boxx (keyup)="0" type="date" id="start" name="trip-start"
+      ></div>
+    
+            </td><td><div class="hh">ddhdtesttihu</div></td><td>
+    
+       <div class ='a'><label for="start">Horaire du :</label>
+<input   #boh (keyup)="0" type="time" id="appt" name="appt"
+       min="09:00" max="18:00" required>à
+       <input  #bohh (keyup)="0" type="time" id="appt" name="appt"
+       min="09:00" max="18:00" required>
+      </div>
+
+
+</td><td><div class="hh">ddhdtesttihu</div></td><td>
+
+        
+      <div class ='a'><label for="start">Pause du :</label>
+        <input  #bot (keyup)="0" type="time" id="appt" name="appt"
+               min="09:00" max="18:00" required>à
+               <input  #bott (keyup)="0" type="time" id="appt" name="appt"
+               min="09:00" max="18:00" required>
+              </div>
+
+</td>
+
+
+
+             
+        </tr></tbody></table>
+
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+<div class="tabIns">
+    <table>
+      <tr>
+        <th>Numero</th>
+        <th>Nom et Prénom </th>
+        <th>CIN</th>
+        <th>Service/Direction</th>
+        <th>Entreprise</th>
+        <th>Entreprise</th> 
+        <th>Entreprise</th>
+        <th>Entreprise</th>
+        <th>Entreprise</th> 
+        <th>Entreprise</th>
+        <th>Entreprise</th>
+    
+    
+      </tr>
+      <tr *ngFor="let orderDetail of myOrderDetails">
+        <td>{{ orderDetail.orderId }}</td>
+        <td>{{ orderDetail.orderFullName }}</td>
+        <td>{{ orderDetail.orderFullOrder }}</td>
+        
+        <td>{{ orderDetail.orderContactNumber }}</td>
+        <td>{{ orderDetail.orderAlternateContactNumber }}</td>
+       <td> <p res>{{ formatDate(box.value) }}</p></td>
+       <td> <p res>{{ formatDate(boxx.value) }}</p></td>
+       <td> <p >{{ (boh.value) }}</p></td>
+       <td> <p >{{ (bohh.value) }}</p></td>
+       <td> <p >{{ (bot.value) }}</p></td>
+       <td> <p >{{ (bott.value) }}</p></td>
+
+    
+      </tr>
+    
+    </table></div>
+
+<br>
+<table *ngIf="f" class="table-bordered1">
+    <tr>
+      <th>Num</th>
+      <th>Nom et prenom</th>
+      <th>Spécialité</th>
+      <th>Direction</th>
+    </tr>
+    <tr>
+      <td>{{f.id}}</td>
+      <td><select class=".custom-select" name="id" id="id"   [(ngModel)]="formateur.id"  (change)="onSubmit()"  >
+        <option *ngFor="let formateur of( formateurs | async)" [value]="formateur.id" size="90">{{ formateur.nomFormateur }}</option>
+    
+    
+    </select></td>
+      <td>{{f.specialite}}</td>
+      <td>{{f.direction}}</td>
+    </tr>
+  </table>
+  <h3 class="S"> Signature et Caché de l'organisme de formation/Entreprise</h3>
